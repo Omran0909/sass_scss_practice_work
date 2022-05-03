@@ -1,0 +1,10 @@
+.card-danger, .card-success, .card-info {
+  background-color: red;
+  color: white;
+  width: 500px;
+  height: 20vh;
+}
+
+.card-success {
+  background-color: green;
+}

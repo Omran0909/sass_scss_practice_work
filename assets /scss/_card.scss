@@ -1,0 +1,71 @@
+
+// THIRD PRACTICE MODULE - EXTEND 
+@function calc-width-card($n) {
+    @return 100px * $n;
+}
+
+%card {
+    background-color: $danger-color;
+    color: $light-color;
+    width: calc-width-card(5);
+    height: 20vh;
+}
+
+.card-info {
+    @extend %card;
+}
+
+.card-success {
+    @extend %card;
+    background-color: $success-color
+}
+
+.card-danger {
+    @extend %card;
+}
+
+
+// SECOND PRACTICE MODULE
+
+// @mixin card($bg: DarkGray) {
+//     background: $bg;
+//     box-shadow: 0 0 1px rgba($bg, 0.25);
+//     color: #fff;
+// }
+
+// .info {
+//     @include card;
+// }
+// .alert {
+//     @include card($bg: $danger-color);
+// }
+// .success {
+//     @include card($bg: $success-color);
+// }
+
+
+// FIRST PRACTICE MODULE
+
+// .card {
+//   width: 30vw;
+//   height: 500px;
+//   background-color: $primary-color;
+
+//   h1 {
+//     color: $dark-color;
+//   }
+
+//   p {
+//     color: $dark-color;
+//   }
+// }
+
+// .card-success {
+//   background-color: $success-color;
+//   color: $light-color;
+// }
+
+// .card-danger {
+//   background-color: $danger-color;
+//   color: $light-color;
+// }
