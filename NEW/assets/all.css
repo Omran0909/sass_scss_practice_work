@@ -40,4 +40,27 @@
   }
 }
 
+.card {
+  width: calc(100% - 20px);
+  padding: 10px;
+}
+
+.card-info {
+  background-color: white;
+  color: black;
+  border: 3px solid #e6e6e6;
+}
+
+.card-success {
+  background-color: green;
+  color: white;
+  border: 3px solid #004d00;
+}
+
+.card-danger {
+  background-color: red;
+  color: white;
+  border: 3px solid #cc0000;
+}
+
 /*# sourceMappingURL=all.css.map */

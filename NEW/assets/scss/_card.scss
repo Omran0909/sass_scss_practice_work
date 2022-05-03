@@ -1,0 +1,22 @@
+@mixin card($bg, $color) {
+    background-color: $bg;
+    color: $color;
+    border: 3px solid darken($color: $bg, $amount: 10%);
+}
+
+.card {
+    width: $col-12;
+    padding: $space;
+}
+
+.card-info {
+    @include card($bg: $primary-color, $color: $dark-color);
+}
+
+.card-success {
+    @include card($bg: $success-color, $color: $light-color);
+}
+
+.card-danger {
+    @include card($bg: $danger-color, $color: $light-color);
+}
